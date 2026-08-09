@@ -1,13 +1,64 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheets" href="styles.css">
-  <title>Odin Dashboard</title>
-</head>
-<body>
-  
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Odin Dashboard</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="top">
+        <div class="left">
+          <img
+            src="src/magnify.svg"
+            alt="search logo"
+            id="search-logo"
+            class="logo"
+          />
+          <input type="text" placeholder="Search" id="search" />
+        </div>
+
+        <div class="right">
+          <img
+            src="src/bell-ring-outline.svg"
+            alt="notify logo"
+            id="notif-logo"
+            class="logo"
+          />
+          <img
+            src="src/main-profile.png"
+            class="profile-picture"
+            id="main-top-right"
+            alt="Main Profile Picture for Account"
+          />
+          <h6>Morgan Oakley</h6>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="left">
+          <img
+            src="src/main-profile.png"
+            class="profile-picture"
+            id="main-hero"
+            alt="Hello Main Profile Picture"
+          />
+          <div class="welcome-text">
+            <p id="welcome-message">Hi there,</p>
+            <h5 id="welcome-hero-name">Morgan Oakley (@morgan)</h5>
+          </div>
+        </div>
+
+        <div class="right">
+          <button class="header-actions">New</button>
+          <button class="header-actions">Upload</button>
+          <button class="header-actions">Share</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar"></div>
+
+    <div class="main"></div>
+  </body>
 </html>
