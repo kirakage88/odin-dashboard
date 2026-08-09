@@ -113,6 +113,12 @@ body {
   width: var(--h6-size);
 }
 
+
+.right h6:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 #notif-logo {
  padding: 0.5rem;
 }
@@ -120,6 +126,7 @@ body {
 #notif-logo:hover {
   background-color: #23232931;
   border-radius: 50rem;
+  cursor: pointer;
 }
 
 .top .profile-picture {
@@ -128,6 +135,7 @@ body {
 
 .profile-picture:hover {
   outline: 3px solid var(--primary-color);
+  cursor: pointer;
 }
 
 
@@ -192,6 +200,7 @@ button {
 
 button:hover {
   background-color: var(--hover-color);
+  cursor: pointer;
 }
 
 button:active {
@@ -275,6 +284,7 @@ li .material-symbols-outlined {
 li:hover {
   border-radius: 8px;
   background-color: var(--hover-background-color);
+  cursor: pointer;
 }
 
 li:hover > .material-symbols-outlined,  li:hover > h6{
