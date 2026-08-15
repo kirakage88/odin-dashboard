@@ -1,115 +1,197 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=chat_bubble,dashboard,groups,help_center,home,person,schedule,settings,shield_person,task"
-    />
-    <title>Odin Dashboard</title>
-  </head>
-  <body>
-    <div class="header">
-      <div class="top">
-        <div class="left">
-          <img
-            src="src/magnify.svg"
-            alt="search logo"
-            id="search-logo"
-            class="logo"
-          />
-          <input type="text" placeholder="Search" id="search" />
-        </div>
 
-        <div class="right">
-          <img
-            src="src/bell-ring-outline.svg"
-            alt="notify logo"
-            id="notif-logo"
-            class="logo"
-          />
-          <img
-            src="src/main-profile.png"
-            class="profile-picture"
-            id="main-top-right"
-            alt="Main Profile Picture for Account"
-          />
-          <h6>Morgan Oakley</h6>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=chat_bubble,dashboard,groups,help_center,home,person,schedule,settings,share,shield_person,star,task,visibility" />
+  <title>Odin Dashboard</title>
+</head>
+
+<body>
+  <div class="header">
+    <div class="top">
+      <div class="left">
+        <img src="src/magnify.svg" alt="search logo" id="search-logo" class="logo" />
+        <input type="text" placeholder="Search" id="search" />
+      </div>
+
+      <div class="right">
+        <img src="src/bell-ring-outline.svg" alt="notify logo" id="notif-logo" class="logo" />
+        <img src="src/main-profile.png" class="profile-picture" id="main-top-right"
+          alt="Main Profile Picture for Account" />
+        <h6>Morgan Oakley</h6>
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="left">
+        <img src="src/main-profile.png" class="profile-picture" id="main-hero" alt="Hello Main Profile Picture" />
+        <div class="welcome-text">
+          <p id="welcome-message">Hi there,</p>
+          <h5 id="welcome-hero-name">Morgan Oakley (@morgan)</h5>
         </div>
       </div>
-      <div class="bottom">
-        <div class="left">
-          <img
-            src="src/main-profile.png"
-            class="profile-picture"
-            id="main-hero"
-            alt="Hello Main Profile Picture"
-          />
-          <div class="welcome-text">
-            <p id="welcome-message">Hi there,</p>
-            <h5 id="welcome-hero-name">Morgan Oakley (@morgan)</h5>
+
+      <div class="right">
+        <button class="header-actions">New</button>
+        <button class="header-actions">Upload</button>
+        <button class="header-actions">Share</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar">
+    <div class="logo-section">
+      <span class="material-symbols-outlined">dashboard</span>
+      <h4>Dashboard</h4>
+    </div>
+    <div class="line-break"></div>
+    <ul class="main-section">
+      <li>
+        <span class="material-symbols-outlined">home</span>
+        <h6>Home</h6>
+      </li>
+      <li>
+        <span class="material-symbols-outlined">person</span>
+        <h6>Profile</h6>
+      </li>
+      <li>
+        <span class="material-symbols-outlined">chat_bubble</span>
+        <h6>Messages</h6>
+      </li>
+      <li>
+        <span class="material-symbols-outlined">schedule</span>
+        <h6>History</h6>
+      </li>
+      <li>
+        <span class="material-symbols-outlined">task</span>
+        <h6>Tasks</h6>
+      </li>
+      <li>
+        <span class="material-symbols-outlined">groups</span>
+        <h6>Communities</h6>
+      </li>
+    </ul>
+    <div class="line-break"></div>
+    <ul class="others-section">
+      <li>
+        <span class="material-symbols-outlined">settings</span>
+        <h6>Settings</h6>
+      </li>
+      <li>
+        <span class="material-symbols-outlined">help_center</span>
+        <h6>Support</h6>
+      </li>
+      <li>
+        <span class="material-symbols-outlined">shield_person</span>
+        <h6>Privacy</h6>
+      </li>
+    </ul>
+    </ul>
+  </div>
+  <div class="main">
+    <div class="left-main">
+      <h5>Your Projects</h5>
+      <div class="grid-container">
+        <div class="card">
+          <h6>Super Cool Project</h6>
+          <p>Mauris pulvinar erat diam, a congue libero auctor et. Nulla fringilla sem enim, dictum dignissim nulla
+            semper vitae. Ut
+            pharetra.</p>
+          <div class="button-group">
+            <button>
+              <span class="material-symbols-outlined star">star</span>
+            </button>
+            <button>
+              <span class="material-symbols-outlined">visibility</span>
+            </button>
+            <button> <span class="material-symbols-outlined">share</span></button>
           </div>
         </div>
-
-        <div class="right">
-          <button class="header-actions">New</button>
-          <button class="header-actions">Upload</button>
-          <button class="header-actions">Share</button>
+      </div>
+    </div>
+    <div class="right-main">
+      <div class="top-section">
+        <h5>Announcements</h5>
+        <div class="card" id="announcements">
+          <p class="title">Site Maintenance
+          <p>
+          <p class="entry">Nullam nec ante volutpat nisl pulvinar imperdiet. Ut a eros auctor, lobortis diam interdum,
+            mollis est. In
+            egestas, ligula vitae scelerisque imperdiet, justo quam finibus orci, at pharetra arcu arcu ac quam. Nam
+            consequat egestas nibh. Fusce scelerisque dictum eros, sit amet iaculis mi accumsan ac. Fusce risus arcu,
+            egestas et velit a, sollicitudin blandit ex. Praesent faucibus enim vel laoreet lacinia. Duis varius nisi
+            quis porta scelerisque. Sed a scelerisque odio, quis accumsan ante. Donec feugiat justo vel odio viverra
+            semper. Vestibulum porta id diam et accumsan.</p>
+          <div class="line-break"></div>
+          <p class="title">Community Share Day
+          <p>
+          <p class="entry">Quisque mattis convallis eleifend. Nullam eu tellus feugiat, tempor lorem in, varius nisl.
+            Sed iaculis faucibus augue,
+            ac faucibus nunc convallis non. Etiam consectetur dui augue, ac dapibus diam congue eu. Maecenas a ex
+            ullamcorper,
+            malesuada neque vel, porttitor tellus. Proin gravida augue vitae lacus molestie, et euismod augue auctor.
+            Mauris eget
+            fringilla enim. Nunc malesuada purus at mauris scelerisque cursus. Mauris eget justo nulla. Proin maximus
+            est in
+            consequat dignissim. Proin imperdiet ipsum id sapien imperdiet gravida. Duis efficitur scelerisque urna vel
+            ultrices. In
+            eleifend ante fringilla eros scelerisque, at tempor ligula fermentum. Sed ante mauris, dignissim at
+            tincidunt at, porta
+            vel est.</p>
+          <div class="line-break"></div>
+          <p class="title">Site Maintenance
+          <p>
+          <p class="entry">Praesent laoreet malesuada auctor. Pellentesque tristique nunc eget consectetur tempor.
+            Vivamus id leo luctus metus
+            iaculis laoreet in et massa. Proin libero nibh, hendrerit at lobortis nec, imperdiet in enim. Vestibulum et
+            odio sed
+            lacus condimentum vestibulum quis eget nisi. Mauris placerat, augue porttitor gravida pretium, odio augue
+            convallis
+            risus, at faucibus libero lorem ac lacus. Praesent eu risus tellus. Nulla volutpat augue non posuere mattis.
+            Quisque at
+            eros et libero condimentum elementum. Mauris venenatis urna arcu, vel dapibus nisl lacinia nec. Nunc iaculis
+            volutpat
+            elit id ullamcorper. Mauris luctus rhoncus velit, vitae elementum nisl venenatis non.</p>
+        </div>
+      </div>
+      <div class="bottom-section">
+        <h5>Trending</h5>
+        <div class="card" id="trending">
+          <div class="entry"><img src="src/main-profile.png" class="profile-picture" id="main-top-right"
+              alt="Trending Profile Account" />
+            <div class="entry-text">
+              <p class="title">@tegan</p>
+              <p>World Peace Builder</p>
+            </div>
+          </div>
+          <div class="entry"><img src="src/main-profile.png" class="profile-picture" id="main-top-right"
+              alt="Trending Profile Account" />
+            <div class="entry-text">
+              <p class="title">@tegan</p>
+              <p>World Peace Builder</p>
+            </div>
+          </div>
+          <div class="entry"><img src="src/main-profile.png" class="profile-picture" id="main-top-right"
+              alt="Trending Profile Account" />
+            <div class="entry-text">
+              <p class="title">@tegan</p>
+              <p>World Peace Builder</p>
+            </div>
+          </div>
+          <div class="entry"><img src="src/main-profile.png" class="profile-picture" id="main-top-right"
+              alt="Trending Profile Account" />
+            <div class="entry-text">
+              <p class="title">@tegan</p>
+              <p>World Peace Builder</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+  </div>
+</body>
 
-    <div class="sidebar">
-      <div class="logo-section">
-        <span class="material-symbols-outlined">dashboard</span>
-        <h4>Dashboard</h4>
-      </div>
-      <div class="line-break"></div>
-      <ul class="main-section">
-        <li>
-          <span class="material-symbols-outlined">home</span>
-          <h6>Home</h6>
-        </li>
-        <li>
-          <span class="material-symbols-outlined">person</span>
-          <h6>Profile</h6>
-        </li>
-        <li>
-          <span class="material-symbols-outlined">chat_bubble</span>
-          <h6>Messages</h6>
-        </li>
-        <li>
-          <span class="material-symbols-outlined">schedule</span>
-          <h6>History</h6>
-        </li>
-        <li>
-          <span class="material-symbols-outlined">task</span>
-          <h6>Tasks</h6>
-        </li>
-        <li>
-          <span class="material-symbols-outlined">groups</span>
-          <h6>Communities</h6>
-        </li>
-      </ul>
-      <div class="line-break"></div>
-      <ul class="others-section">
-        <li>
-          <span class="material-symbols-outlined">settings</span>
-          <h6>Settings</h6>
-        </li>
-        <li>
-           <span class="material-symbols-outlined">help_center</span>
-          <h6>Support</h6>
-        </li>
-        <li>
-           <span class="material-symbols-outlined">shield_person</span>
-          <h6>Privacy</h6>
-        </li>
-      </ul>
-      </ul>
-    </div>
-    <div class="main"></div>
-  </body>
 </html>
